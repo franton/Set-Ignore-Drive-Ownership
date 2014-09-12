@@ -3,7 +3,7 @@
 # Script to set non bootable volumes to "ignore ownership"
 # Inspired by https://github.com/andrina/JNUC2013/blob/master/Users%20Do%20Your%20Job/IgnoreVolumeOwnership.sh
 
-# Author      : r.purves@arts.ac.uk
+# Author      : contact@richard-purves.com
 
 # Version 1.0 : 18-10-2012 - Initial Version
 
@@ -23,7 +23,7 @@ do
 
 # Ignore ownership using variable created above
 
-	vsdbutil -d "$VOLUMENAME"
+diskutil disableOwnership "$VOLUMENAME"
 	
 done
 
